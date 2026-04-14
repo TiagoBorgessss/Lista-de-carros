@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Times</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            margin: 20px;
+            font-size: 25px;
+        }
+
+        th{
+            font-size: 35px;
+            padding: 15px;
+        }
+
+        td{
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div id="palmeiras"></div>
+<div id="flamengo"></div>
+
+<script>
+
+const time = {
+    nome: "Palmeiras",
+    partidas: 15,
+    vitorias: 10,
+    derrotas: 5,
+    empates: 0
+}
+
+const palmeiras = document.getElementById("palmeiras")
+palmeiras.innerHTML += `
+<table border="1">
+<tr>
+<th colspan="2" style="color: darkgreen;">${time.nome}</th>
+</tr>
+
+<tr>
+<td>Partidas</td>
+<td>${time.partidas}</td>
+</tr>
+
+<tr>
+<td>Vitórias</td>
+<td>${time.vitorias}</td>
+</tr>
+
+<tr>
+<td>Derrotas</td>
+<td>${time.derrotas}</td>
+</tr>
+
+<tr>
+<td>Empates</td>
+<td>${time.empates}</td>
+</tr>
+
+</table>
+`
+
+
+const time1 = {
+    nome: "Flamengo",
+    partidas: 15,
+    vitorias: 10,
+    derrotas: 2,
+    empates: 3
+}
+
+const flamengo = document.getElementById("flamengo")
+flamengo.innerHTML += `
+<table border="1">
+
+<tr>
+<th colspan="2">${time1.nome}</th>
+</tr>
+
+<tr>
+<td>Partidas</td>
+<td>${time1.partidas}</td>
+</tr>
+
+<tr>
+<td>Vitórias</td>
+<td>${time1.vitorias}</td>
+</tr>
+
+<tr>
+<td>Derrotas</td>
+<td>${time1.derrotas}</td>
+</tr>
+
+<tr>
+<td>Empates</td>
+<td>${time1.empates}</td>
+</tr>
+
+</table>
+`
+
+</script>
+
+</body>
+</html>
